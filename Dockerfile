@@ -11,6 +11,4 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /etc/ansible
 
-ENTRYPOINT ["ansible-playbook"]
-
-CMD ["main.yml"]
+CMD ["/bin/bash"]
