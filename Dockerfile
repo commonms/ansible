@@ -4,9 +4,12 @@ MAINTAINER Jose M. Fernandez-Alba <jm.fernandezalba@commonms.com>
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+	vim \
 	nano \
 	python-pip \
 	rsync \
+	wget \
+	iputils-ping \
 	&& pip install docker-py
 
 WORKDIR /etc/ansible
