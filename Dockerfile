@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 	rsync \
 	wget \
 	iputils-ping \
+	corkscrew \
 	&& pip install docker-py
 
 WORKDIR /etc/ansible
